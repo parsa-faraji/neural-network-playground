@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Network Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>Neural Network Playground</h1>
+            <p>Visualize how neural networks learn to classify data in real-time</p>
+        </header>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>Dataset</label>
+                <select id="dataset">
+                    <option value="circle">Circle</option>
+                    <option value="xor">XOR</option>
+                    <option value="spiral">Spiral</option>
+                    <option value="gaussian">Gaussian</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Learning Rate</label>
+                <select id="learningRate">
+                    <option value="0.001">0.001</option>
+                    <option value="0.003">0.003</option>
+                    <option value="0.01" selected>0.01</option>
+                    <option value="0.03">0.03</option>
+                    <option value="0.1">0.1</option>
+                    <option value="0.3">0.3</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Activation</label>
+                <select id="activation">
+                    <option value="relu" selected>ReLU</option>
+                    <option value="tanh">Tanh</option>
+                    <option value="sigmoid">Sigmoid</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Hidden Layers</label>
+                <div class="layer-controls">
+                    <button id="removeLayer" class="btn-icon">-</button>
+                    <span id="layerCount">2</span>
+                    <button id="addLayer" class="btn-icon">+</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Neurons per Layer</label>
+                <div class="layer-controls">
+                    <button id="removeNeuron" class="btn-icon">-</button>
+                    <span id="neuronCount">4</span>
+                    <button id="addNeuron" class="btn-icon">+</button>
+                </div>
+            </div>
+
+            <div class="control-buttons">
+                <button id="playPause" class="btn btn-primary">
+                    <span class="play-icon">▶</span> Train
+                </button>
+                <button id="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="visualization-panel">
+                <div class="canvas-container">
+                    <canvas id="mainCanvas"></canvas>
+                    <div class="canvas-label">Decision Boundary</div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-label">Epoch</span>
+                        <span class="stat-value" id="epochCount">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Loss</span>
+                        <span class="stat-value" id="lossValue">-</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Accuracy</span>
+                        <span class="stat-value" id="accuracyValue">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="network-panel">
+                <h3>Network Architecture</h3>
+                <canvas id="networkCanvas"></canvas>
+            </div>
+        </div>
+
+        <div class="loss-chart-container">
+            <h3>Training Loss</h3>
+            <canvas id="lossChart"></canvas>
+        </div>
+
+        <footer class="footer">
+            <p>Built by <a href="https://github.com/parsa-faraji" target="_blank">Parsa Faraji Alamouti</a></p>
+        </footer>
+    </div>
+
+    <script src="nn.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
