@@ -1,10 +1,18 @@
+<div align="center">
+
+![Neural Network Playground](https://socialify.git.ci/parsa-faraji/neural-network-playground/image?description=1&font=Inter&language=1&name=1&owner=1&pattern=Brick%20Wall&theme=Dark)
+
 # Neural Network Playground
 
 An interactive web-based visualization tool for understanding how neural networks learn. Watch decision boundaries form in real-time as you train networks on various datasets.
 
-![Neural Network Playground](https://img.shields.io/badge/ML-Visualization-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge&logo=github)](https://parsa-faraji.github.io/neural-network-playground)
+[![ML](https://img.shields.io/badge/ML-Visualization-purple?style=for-the-badge)](https://parsa-faraji.github.io/neural-network-playground)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+</div>
+
+---
 
 ## Features
 
@@ -20,7 +28,7 @@ An interactive web-based visualization tool for understanding how neural network
 
 ## Demo
 
-Open `index.html` in any modern browser to run the playground.
+**[Try the Live Demo](https://parsa-faraji.github.io/neural-network-playground)** - No installation needed!
 
 ## How It Works
 
