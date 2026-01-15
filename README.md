@@ -1,8 +1,8 @@
 <div align="center">
 
-![Neural Network Playground](https://socialify.git.ci/parsa-faraji/neural-network-playground/image?description=1&font=Inter&language=1&name=1&owner=1&pattern=Brick%20Wall&theme=Dark)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19&height=200&section=header&text=Neural%20Network%20Playground&fontSize=40&fontAlignY=35&desc=Interactive%20ML%20Visualization&descAlignY=55&animation=twinkling)
 
-# Neural Network Playground
+
 
 An interactive web-based visualization tool for understanding how neural networks learn. Watch decision boundaries form in real-time as you train networks on various datasets.
 
