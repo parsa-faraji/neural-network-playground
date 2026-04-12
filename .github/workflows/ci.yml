@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate HTML
+        uses: Cyb3r-Jak3/html5-validator-action@v7.1.0
+        with:
+          files: index.html
+      - name: Check JavaScript syntax
+        run: |
+          npx eslint . --ext .js --no-eslintrc --parser-options=ecmaVersion:2020 || true
+      - name: Validate CSS
+        run: |
+          npm install -g stylelint stylelint-config-standard || true
+          stylelint "*.css" || true

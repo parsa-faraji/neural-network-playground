@@ -7,6 +7,7 @@
 An interactive web-based visualization tool for understanding how neural networks learn. Watch decision boundaries form in real-time as you train networks on various datasets.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge&logo=github)](https://parsa-faraji.github.io/neural-network-playground)
+[![CI](https://github.com/parsa-faraji/neural-network-playground/actions/workflows/ci.yml/badge.svg)](https://github.com/parsa-faraji/neural-network-playground/actions)
 [![ML](https://img.shields.io/badge/ML-Visualization-purple?style=for-the-badge)](https://parsa-faraji.github.io/neural-network-playground)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
